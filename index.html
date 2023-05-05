@@ -3,8 +3,55 @@
 <head>
   <title>PassageGuessr: Lithum Passage ID Practice</title>
   <style>
+
+				
+		@font-face {
+			font-family: "neo-sans";
+			font-style: normal;
+			font-weight: 700;
+			font-display: swap;
+			src: url("https://use.typekit.net/af/b07eb4/00000000000000007735bb57/30/l?primer=83aaf8b3086dc5b082c9b97866118e90ec8a0116a2f1fa26fea125d379f2cd21&fvd=n7&v=3") format("woff2");
+		}
+	
+				
+		@font-face {
+			font-family: "neo-sans";
+			font-style: italic;
+			font-weight: 700;
+			font-display: swap;
+			src: url("https://use.typekit.net/af/49bd4e/00000000000000007735bb45/30/l?primer=83aaf8b3086dc5b082c9b97866118e90ec8a0116a2f1fa26fea125d379f2cd21&fvd=i7&v=3") format("woff2");
+		}
+	
+				
+		@font-face {
+			font-family: "neo-sans";
+			font-style: italic;
+			font-weight: 400;
+			font-display: swap;
+			src: url("https://use.typekit.net/af/cc16b7/00000000000000007735bb40/30/l?primer=83aaf8b3086dc5b082c9b97866118e90ec8a0116a2f1fa26fea125d379f2cd21&fvd=i4&v=3") format("woff2");
+		}
+	
+				
+		@font-face {
+			font-family: "neo-sans";
+			font-style: normal;
+			font-weight: 500;
+			font-display: swap;
+			src: url("https://use.typekit.net/af/fde5b4/00000000000000007735bb56/30/l?primer=83aaf8b3086dc5b082c9b97866118e90ec8a0116a2f1fa26fea125d379f2cd21&fvd=n5&v=3") format("woff2");
+		}
+	
+				
+		@font-face {
+			font-family: "neo-sans";
+			font-style: normal;
+			font-weight: 400;
+			font-display: swap;
+			src: url("https://use.typekit.net/af/b34fab/00000000000000007735bb5f/30/l?primer=83aaf8b3086dc5b082c9b97866118e90ec8a0116a2f1fa26fea125d379f2cd21&fvd=n4&v=3") format("woff2");
+		}
+	
+			
     body {
-      font-family: Futura, Arial, sans-serif;
+      font-family: neo-sans, sans-serif, Futura, Arial;
       color: #333;
       background-color: #f7f7f7;
       line-height: 1.6;
@@ -20,7 +67,9 @@
     }
     
     .large-button {
-      font-family: Futura, Arial, sans-serif;
+      font-family: neo-sans, sans-serif, Futura, Arial;
+      font-style: italic;
+      font-weight: 700;
       font-size: 20px;
       padding: 15px 30px;
       width: 150px;
@@ -48,8 +97,9 @@
     }
 
     u {
-      font-family: Futura, Arial, sans-serif;
+      font-family: neo-sans, sans-serif, Futura, Arial;
     }
+}
   </style>
 </head>
 <body>
@@ -68,6 +118,7 @@
   </div>
   <hr>
   <div id="context" class="pre-like"></div>
+  <div id="firework-container" class="firework-container"></div>
   
   <script src="game.js"></script>
 </body>

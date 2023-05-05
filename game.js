@@ -122,3 +122,4 @@ yesButton.onclick = () => handleUserInput('y');
 noButton.onclick = () => handleUserInput('n');
 skipButton.onclick = () => handleUserInput('s');
 });
+
