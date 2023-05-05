@@ -75,7 +75,7 @@ function startRound() {
       const hiddenSentences = consecutiveSentences.map(sentence => sentence.replace(currentFile, '__________'));
 
       // Display the hidden sentences
-      hiddenSentencesElement.innerHTML = '<p class="underline">Sentence:</p>' + hiddenSentences.join('. ');
+      hiddenSentencesElement.innerHTML = '<u>Sentence:</u>\n' + hiddenSentences.join('. ');
       // Show the Check Answer button
       checkAnswerButton.style.display = 'inline-block';
     })
@@ -83,7 +83,7 @@ function startRound() {
 }
 
 function checkAnswer() {
-  contextElement.innerHTML = `<p class="underline">Answer<\p>: ${currentFile}\n\n<p class="underline">Context<\p>:\n` + contextParagraphs.join('. ');
+  contextElement.innerHTML = `<u>Answer</u>: ${currentFile}\n\n<u>Context</u>:\n` + contextParagraphs.join('. ');
   checkAnswerButton.style.display = 'none';
   yesButton.style.display = 'inline-block';
   noButton.style.display = 'inline-block';
