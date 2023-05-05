@@ -3,18 +3,52 @@
 <head>
   <title>PassageGuessr: Lithum Passage ID Practice</title>
   <style>
+    body {
+      font-family: Futura, Arial, sans-serif;
+      color: #333;
+      background-color: #f7f7f7;
+      line-height: 1.6;
+    }
+    
     .pre-like {
       white-space: pre-wrap;
       font-family: monospace;
     }
+    
     .underline {
-    text-decoration: underline;
-  }
-  .large-button {
-      font-size: 20px; /* Adjust the font size */
-      padding: 15px 30px; /* Add padding to make the button larger */
-      width: 150px; /* Set a fixed width for the button */
-      cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+      text-decoration: underline;
+    }
+    
+    .large-button {
+      font-family: Futura, Arial, sans-serif;
+      font-size: 20px;
+      padding: 15px 30px;
+      width: 150px;
+      cursor: pointer;
+      background-color: #0070b8;
+      border: none;
+      color: #fff;
+      border-radius: 5px;
+      transition: background-color 0.2s;
+    }
+    
+    .large-button:hover {
+      background-color: #005a95;
+    }
+    
+    #game-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    hr {
+      border: none;
+      border-top: 1px solid #e0e0e0;
+      margin: 20px 0;
+    }
+
+    u {
+      font-family: Futura, Arial, sans-serif;
     }
   </style>
 </head>
@@ -22,11 +56,11 @@
   <p>Press <b>"start game/skip"</b> to start. <br> Press <b>"check answer"</b> to check answer. <br> Press <b>"yes"</b> or <b>"no"</b> to record your score. <br> Since passages are randomly selected, sometimes there might be some non-meaningful passages, press <b>"start game/skip"</b> if you want to skip this round (not counting to score) before checking answer. <br> You can also press <b>"skip"</b> after checking answer to skip the round. <br> known bug: sometimes buttons disappear. In that case, just click <b>"start game/skip"</b> to resume</p>
 
   <div id="game-container">
-    <button id="start-button" class = "large-button">Start Game/Skip</button>
-    <button id="check-answer-button" class = "large-button" style="display: none;">Check Answer</button>
-    <button id="yes-button" class = "large-button" style="display: none;">Yes</button>
-    <button id="no-button" class = "large-button" style="display: none;">No</button>
-    <button id="skip-button" class = "large-button" style="display: none;">Skip</button>
+    <button id="start-button" class="large-button">Start Game/Skip</button>
+    <button id="check-answer-button" class="large-button" style="display: none;">Check Answer</button>
+    <button id="yes-button" class="large-button" style="display: none;">Yes</button>
+    <button id="no-button" class="large-button" style="display: none;">No</button>
+    <button id="skip-button" class="large-button" style="display: none;">Skip</button>
     <div id="result" class="pre-like"></div>
     <div id="correct-rate" class="pre-like"></div>
     <hr>
