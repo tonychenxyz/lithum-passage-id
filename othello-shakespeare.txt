@@ -1,38 +1,4 @@
-﻿XXXX
-OTHELLO, THE MOOR OF VENICE
-
-by William Shakespeare
-
-
-
-
-
-
-PERSONS REPRESENTED:
-
-DUKE OF VENICE.
-BRABANTIO, a Senator.
-Other Senators.
-GRATIANO, Brother to Brabantio.
-LODOVICO, Kinsman to Brabantio.
-OTHELLO, a noble Moor, in the service of Venice.
-CASSIO, his Lieutenant.
-IAGO, his Ancient.
-RODERIGO, a Venetian Gentleman.
-MONTANO, Othello's predecessor in the government of Cyprus.
-CLOWN, Servant to Othello.
-Herald.
-
-DESDEMONA, Daughter to Brabantio and Wife to Othello.
-EMILIA, Wife to Iago.
-BIANCA, Mistress to Cassio.
-
-Officers, Gentlemen, Messenger, Musicians, Herald, Sailor,
-Attendants, &c.
-
-
-SCENE: The First Act in Venice; during the rest of the Play at a
-Seaport in Cyprus.
+﻿
 
 
 

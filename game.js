@@ -10,7 +10,7 @@ const textFiles = [
     'The Lais of Marie De France: With Two Fur - Marie de France, Burgess Busby (Translator).txt',
     'Confessions-Augustine.txt',
     'othello-shakespeare.txt',
-    'Inferno - Dante Alighieri, Allen Mandelbaum (Translator).txt',
+    'Inferno - Dante.txt',
     'Citizen An American Lyric - Claudia Rankine.txt',
     'The Posthumous Memoirs of Bras Cubas - Machado De Assis.txt',
   ];
@@ -58,13 +58,13 @@ function startRound() {
     .then(response => response.text())
     .then(contents => {
       // Split the contents into sentences
-      const sentences = contents.split(/[.:!?]/);
+      const sentences = contents.split(/[.:!?,\[\]]/);
 
       // Choose a random starting index for the consecutive sentences
       const startIndex = Math.floor(Math.random() * (sentences.length - 3));
 
       // Extract the consecutive sentences
-      const consecutiveSentences = sentences.slice(startIndex, startIndex + 2);
+      const consecutiveSentences = sentences.slice(startIndex, startIndex + 6);
 
       // Extract the context paragraphs
       const contextStartIndex = Math.max(0, startIndex - 20);
