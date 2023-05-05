@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Guess the Book Game</title>
+  <title>Lithum Passage ID Practice</title>
   <style>
     .pre-like {
       white-space: pre-wrap;
       font-family: monospace;
     }
+    .underline {
+    text-decoration: underline;
+  }
   </style>
 </head>
 <body>
-  <h1>Guess the Book Game</h1>
-  <p>Can you guess the book from three consecutive sentences?</p>
+  <p>Press start game to start. <br> Press check answer to check answer. <br> Press yes or no to record your score. <br> Press start game if you want to skip this round (not counting to score). <br> known bug: sometimes buttons disappear. In that case, just click start game again</p>
 
   <div id="game-container">
     <button id="start-button">Start Game</button>
+    <button id="check-answer-button" style="display: none;">Check Answer</button>
     <button id="yes-button" style="display: none;">Yes</button>
     <button id="no-button" style="display: none;">No</button>
     <button id="skip-button" style="display: none;">Skip</button>
+    <div id="result" class="pre-like"></div>
+    <div id="correct-rate" class="pre-like"></div>
+    <hr>
     <div id="hidden-sentences" class="pre-like"></div>
   </div>
-
-  <div id="result" class="pre-like"></div>
+  <hr>
   <div id="context" class="pre-like"></div>
-  <div id="correct-rate" class="pre-like"></div>
-
+  
   <script src="game.js"></script>
 </body>
 </html>
