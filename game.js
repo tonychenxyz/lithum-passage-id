@@ -58,13 +58,13 @@ function startRound() {
     .then(response => response.text())
     .then(contents => {
       // Split the contents into sentences
-      const sentences = contents.split(/[.:!?,\[\]\d-]/);
+      const sentences = contents.split(/[.:!?,\[\]\d-\n]/);
 
       // Choose a random starting index for the consecutive sentences
       const startIndex = Math.floor(Math.random() * (sentences.length - 3));
 
       // Extract the consecutive sentences
-      const consecutiveSentences = sentences.slice(startIndex, startIndex + 6);
+      const consecutiveSentences = sentences.slice(startIndex, startIndex +12);
 
       // Extract the context paragraphs
       const contextStartIndex = Math.max(0, startIndex - 20);
