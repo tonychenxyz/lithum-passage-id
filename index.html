@@ -10,17 +10,23 @@
     .underline {
     text-decoration: underline;
   }
+  .large-button {
+      font-size: 20px; /* Adjust the font size */
+      padding: 15px 30px; /* Add padding to make the button larger */
+      width: 150px; /* Set a fixed width for the button */
+      cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+    }
   </style>
 </head>
 <body>
-  <p>Press start game to start. <br> Press check answer to check answer. <br> Press yes or no to record your score. <br> Press start game if you want to skip this round (not counting to score). <br> known bug: sometimes buttons disappear. In that case, just click start game again</p>
+  <p>Press "start game" to start. <br> Press "check answer" to check answer. <br> Press "yes" or "no" to record your score. <br> When there are some non-meaningful passages, press "start game" if you want to skip this round (not counting to score). <br> known bug: sometimes buttons disappear. In that case, just click "start game" to resume</p>
 
   <div id="game-container">
-    <button id="start-button">Start Game</button>
-    <button id="check-answer-button" style="display: none;">Check Answer</button>
-    <button id="yes-button" style="display: none;">Yes</button>
-    <button id="no-button" style="display: none;">No</button>
-    <button id="skip-button" style="display: none;">Skip</button>
+    <button id="start-button" class = "large-button">Start Game</button>
+    <button id="check-answer-button" class = "large-button" style="display: none;">Check Answer</button>
+    <button id="yes-button" class = "large-button" style="display: none;">Yes</button>
+    <button id="no-button" class = "large-button" style="display: none;">No</button>
+    <button id="skip-button" class = "large-button" style="display: none;">Skip</button>
     <div id="result" class="pre-like"></div>
     <div id="correct-rate" class="pre-like"></div>
     <hr>
