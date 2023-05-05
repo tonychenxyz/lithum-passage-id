@@ -58,7 +58,7 @@ function startRound() {
     .then(response => response.text())
     .then(contents => {
       // Split the contents into sentences
-      const sentences = contents.split('. ');
+      const sentences = contents.split('.');
 
       // Choose a random starting index for the consecutive sentences
       const startIndex = Math.floor(Math.random() * (sentences.length - 3));
