@@ -11,7 +11,7 @@ const textFiles = [
     'Confessions-Augustine.txt',
     'othello-shakespeare.txt',
     'Inferno - Dante Alighieri, Allen Mandelbaum (Translator).txt',
-    'Citizen: An American Lyric - Claudia Rankine.txt',
+    'Citizen An American Lyric - Claudia Rankine.txt',
     'The Posthumous Memoirs of Bras Cubas - Machado De Assis.txt',
   ];
   
