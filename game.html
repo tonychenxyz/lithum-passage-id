@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guess the Book Game</title>
+  <style>
+    .pre-like {
+      white-space: pre-wrap;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <h1>Guess the Book Game</h1>
+  <p>Can you guess the book from three consecutive sentences?</p>
+
+  <div id="game-container">
+    <button id="start-button">Start Game</button>
+    <div id="hidden-sentences" class="pre-like"></div>
+    <button id="yes-button" style="display: none;">Yes</button>
+    <button id="no-button" style="display: none;">No</button>
+    <button id="skip-button" style="display: none;">Skip</button>
+  </div>
+
+  <div id="result" class="pre-like"></div>
+  <div id="context" class="pre-like"></div>
+  <div id="correct-rate" class="pre-like"></div>
+
+  <script src="game.js"></script>
+</body>
+</html>
