@@ -64,11 +64,11 @@ function startRound() {
       const startIndex = Math.floor(Math.random() * (sentences.length - 3));
 
       // Extract the consecutive sentences
-      const consecutiveSentences = sentences.slice(startIndex, startIndex + 3);
+      const consecutiveSentences = sentences.slice(startIndex, startIndex + 2);
 
       // Extract the context paragraphs
-      const contextStartIndex = Math.max(0, startIndex - 3);
-      const contextEndIndex = Math.min(startIndex + 6, sentences.length);
+      const contextStartIndex = Math.max(0, startIndex - 20);
+      const contextEndIndex = Math.min(startIndex + 20, sentences.length);
       contextParagraphs = sentences.slice(contextStartIndex, contextEndIndex);
 
       // Hide the file name in each sentence
